@@ -3,6 +3,8 @@
 export("%>%")
 export(convert_SST)
 export(convert_to_character_matrix)
+export(convert_to_dec_deg)
+export(convert_yy_to_yyyy)
 export(get_default_significant_figures)
 export(import_from_ODK)
 import(raster)
