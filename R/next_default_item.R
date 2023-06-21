@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #' Generate the next default item name
 #'
 #' This function generates a new item name based on the provided prefix. It is useful when creating default item names or ensuring uniqueness in a set of item names.
@@ -14,23 +13,8 @@
 #'
 #' @examples
 #' next_default_item("item", c("item1", "item2", "item3"))
-#' # Output: "item4"
 #' 
 #' next_default_item("item", c("item1", "item2", "item3"), include_index = TRUE, start_index = 5)
-#' # Output: "item5"
-=======
-#' Title
-#'
-#' @param prefix 
-#' @param existing_names 
-#' @param include_index 
-#' @param start_index 
-#'
-#' @return
-#' @export
-#'
-#' @examples
->>>>>>> 22f6b979b0216e5cbc97e975786b941f5c9b740c
 next_default_item = function(prefix, existing_names = c(), include_index = FALSE, start_index = 1) {
   if(!is.character(prefix)) stop("prefix must be of type character")
   
