@@ -15,7 +15,7 @@ import_from_ODK = function(username, form_name, platform) {
     url <- "https://api.ona.io/api/v1/data"
   }
   else stop("Unrecognised platform.")
-  password <- getPass::(paste0(username, " password:"))
+  password <- getPass::getPass(paste0(username, " password:"))
   if(!missing(username) && !missing(password)) {
     has_authentication <- TRUE
     user <- httr::authenticate(username, password)
