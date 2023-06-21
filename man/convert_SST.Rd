@@ -20,17 +20,11 @@ This function converts SST  data from a given file into a structured format. It 
 \examples{
 # Example usage:
 # Assuming the datafile is "sst_data.csv" and the SST data starts from row 5
-converted_data <- convert_SST("sst_data.csv", data_from = 5)
+#converted_data <- convert_SST("sst_data.csv", data_from = 5)
 
 # Access the converted data frame and latitude-longitude data frame
-my_data <- converted_data[[1]]
-lat_lon_df <- converted_data[[2]]
+#my_data <- converted_data[[1]]
+#lat_lon_df <- converted_data[[2]]
 
 # Print the converted data frame
-print(my_data)
-
-# Plot the latitude-longitude data
-coordinates(lat_lon_df) <- ~longitude + latitude
-plot(lat_lon_df, col = my_data$SST_value, pch = 16, main = "SST Data")
-
 }
