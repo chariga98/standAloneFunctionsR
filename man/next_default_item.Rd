@@ -2,11 +2,7 @@
 % Please edit documentation in R/next_default_item.R
 \name{next_default_item}
 \alias{next_default_item}
-<<<<<<< HEAD
 \title{Generate the next default item name}
-=======
-\title{Title}
->>>>>>> 22f6b979b0216e5cbc97e975786b941f5c9b740c
 \usage{
 next_default_item(
   prefix,
@@ -16,7 +12,6 @@ next_default_item(
 )
 }
 \arguments{
-<<<<<<< HEAD
 \item{prefix}{A character string representing the prefix for the item name.}
 
 \item{existing_names}{A vector of existing item names. Defaults to an empty vector.}
@@ -33,20 +28,6 @@ This function generates a new item name based on the provided prefix. It is usef
 }
 \examples{
 next_default_item("item", c("item1", "item2", "item3"))
-# Output: "item4"
 
 next_default_item("item", c("item1", "item2", "item3"), include_index = TRUE, start_index = 5)
-# Output: "item5"
-=======
-\item{prefix}{}
-
-\item{existing_names}{}
-
-\item{include_index}{}
-
-\item{start_index}{}
-}
-\description{
-Title
->>>>>>> 22f6b979b0216e5cbc97e975786b941f5c9b740c
 }
