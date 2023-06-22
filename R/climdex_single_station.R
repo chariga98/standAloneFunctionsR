@@ -33,10 +33,9 @@
 #' @export
 #'
 #' @examples
-#' data <- read.csv("climate_data.csv")
-#' climdex_single_station(data, freq = "annual", indices = c("fd", "su", "id"), year = "Year")
-#' climdex_single_station(data, freq = "monthly", indices = c("fd", "su", "id"), year = "Year", month = "Month")
-#'
+#'#data <- read.csv("climate_data.csv")
+#'#climdex_single_station(data, freq = "annual", indices = c("fd", "su"), year = "Year")
+
 
 climdex_single_station <- function(ci, freq = "annual", indices, year, month,
                                    spells.can.span.years = FALSE, gsl.mode = gsl.mode,
