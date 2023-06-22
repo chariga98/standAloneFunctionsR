@@ -10,6 +10,10 @@ export(convert_to_dec_deg)
 export(convert_yy_to_yyyy)
 export(get_default_significant_figures)
 export(import_from_ODK)
+
 import(raster)
 import(sp)
+
+export(next_default_item)
+
 importFrom(magrittr,"%>%")
