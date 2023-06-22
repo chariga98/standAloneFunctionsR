@@ -1,5 +1,5 @@
 
-#' compare_columns
+#' compare columns
 #' Compare two columns and provide information about their values
 #' @param x The first column to compare.
 #' @param y The second column to compare.
@@ -15,7 +15,10 @@
 #' @export
 #'
 #' @examples
-#' compare_columns(column1, column2)
+#' x <- 1:10
+#' y <- 5:14
+#' compare_columns(x, y)
+#'
 compare_columns <- function(x, y, use_unique = TRUE, sort_values = TRUE, firstnotsecond = TRUE, secondnotfirst = TRUE, display_intersection = FALSE, display_union = FALSE, display_values = TRUE) {
   x_name <- deparse(substitute(x))
   y_name <- deparse(substitute(y))

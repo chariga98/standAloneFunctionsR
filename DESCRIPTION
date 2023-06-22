@@ -14,12 +14,7 @@ Imports:
     sp,
     raster,
     httr,
-
-    raster,
-    sp,
-
     utils,
-
     jsonlite,
     magrittr,
     sf
