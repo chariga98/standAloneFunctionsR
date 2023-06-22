@@ -38,3 +38,9 @@ A data frame containing the calculated climate indices for the specified station
 \description{
 This function calculates climate indices for a single weather station based on the provided parameters. The function utilizes the climdex.pcic package to compute various climate indices. The indices can be calculated either on an annual or monthly basis, depending on the specified frequency.
 }
+\examples{
+data <- read.csv("climate_data.csv")
+climdex_single_station(data, freq = "annual", indices = c("fd", "su", "id"), year = "Year")
+climdex_single_station(data, freq = "monthly", indices = c("fd", "su", "id"), year = "Year", month = "Month")
+
+}
