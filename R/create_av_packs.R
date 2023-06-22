@@ -8,7 +8,7 @@
 #' @examples
 #' create_av_packs()
 create_av_packs <- function() {
-  av_packs <<- available.packages(repos = "https://cran.rstudio.com/")
+  av_packs <<- utils::available.packages(repos = "https://cran.rstudio.com/")
   av_packs <<- data.frame(av_packs)
 }
 
