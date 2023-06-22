@@ -2,7 +2,7 @@
 % Please edit documentation in R/compare_columns.R
 \name{compare_columns}
 \alias{compare_columns}
-\title{compare_columns
+\title{compare columns
 Compare two columns and provide information about their values}
 \usage{
 compare_columns(
@@ -40,9 +40,12 @@ compare_columns(
 None.
 }
 \description{
-compare_columns
+compare columns
 Compare two columns and provide information about their values
 }
 \examples{
-compare_columns(column1, column2)
+x <- 1:10
+y <- 5:14
+compare_columns(x, y)
+
 }
