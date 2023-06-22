@@ -11,7 +11,10 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     getPass,
+    sp,
+    raster,
     httr,
+    utils,
     jsonlite,
     magrittr,
     sf

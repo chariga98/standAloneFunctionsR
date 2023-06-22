@@ -44,3 +44,4 @@ import_from_ODK = function(username, form_name, platform) {
   out <- jsonlite::fromJSON(form_data, flatten = TRUE)
   return(out)
 }
+
