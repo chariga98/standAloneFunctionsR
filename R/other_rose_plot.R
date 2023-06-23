@@ -19,13 +19,11 @@
 #' @export
 #'
 #' @examples
-#' #data <- read.csv("data.csv")
-#' #other_rose_plots(data, type1_col_name, type2_col_name, date_col_name, wd_col_name, ws_col_name, "percentile_rose", "PM2.5", c("NO2", "SO2"))
-#'
-#' This example generates a percentile rose plot using the "percentile_rose" method from the openair package, using the "PM2.5" pollutant for the plot and including "NO2" and "SO2" as additional pollutants in the plot.
+#' # This example generates a percentile rose plot using the "percentile_rose" method from the openair package, using the "PM2.5" pollutant for the plot and including "NO2" and "SO2" as additional pollutants in the plot.
+#' # data <- read.csv("data.csv")
+#' # other_rose_plots(data, type1_col_name, type2_col_name, date_col_name, wd_col_name, ws_col_name, "percentile_rose", "PM2.5", c("NO2", "SO2"))
 #'
 #' @importFrom openair percentileRose polarPlot polarAnnulus polarCluster polarFreq
-#' @import dplyr
 #' 
 other_rose_plots <- function(data, type1_col_name, type2_col_name, date_col_name, wd_col_name, ws_col_name, main_method, single_pollutant, multiple_pollutant, ...) {
   type <- "default"
