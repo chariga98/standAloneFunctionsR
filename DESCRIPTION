@@ -13,6 +13,8 @@ Imports:
     getPass,
     sp,
     raster,
+    dplyr,
+    openair,
     httr,
     utils,
     jsonlite,
