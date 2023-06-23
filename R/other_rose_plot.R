@@ -26,7 +26,6 @@
 #'
 #' @importFrom openair percentileRose polarPlot polarAnnulus polarCluster polarFreq
 #' @import dplyr
-#' @importFrom utils rename
 #' 
 other_rose_plots <- function(data, type1_col_name, type2_col_name, date_col_name, wd_col_name, ws_col_name, main_method, single_pollutant, multiple_pollutant, ...) {
   type <- "default"
