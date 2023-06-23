@@ -20,3 +20,5 @@ Imports:
     jsonlite,
     magrittr,
     sf
+Remotes:
+    pacificclimate/climdex.pcic
