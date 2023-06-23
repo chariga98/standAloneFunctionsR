@@ -13,16 +13,10 @@ export(create_av_packs)
 export(get_default_significant_figures)
 export(import_from_ODK)
 export(next_default_item)
-
 export(package_check)
-
-
 export(other_rose_plots)
-import(dplyr)
-
-
 export(slope)
-
+import(dplyr)
 import(raster)
 import(sp)
 importFrom(magrittr,"%>%")
