@@ -2,6 +2,7 @@
 
 export("%>%")
 export(add_t_range)
+export(add_xy_area_range)
 export(add_xy_point_range)
 export(climdex_single_station)
 export(compare_columns)
