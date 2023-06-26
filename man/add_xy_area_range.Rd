@@ -2,7 +2,7 @@
 % Please edit documentation in R/add_xy_area_range.R
 \name{add_xy_area_range}
 \alias{add_xy_area_range}
-\title{add_xy_area_range}
+\title{add xy area range}
 \usage{
 add_xy_area_range(
   path,
