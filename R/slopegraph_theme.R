@@ -1,4 +1,4 @@
-#' slopegraph theme
+#' Slope graph theme
 #'
 #' @description  A function that generates a theme for slopegraph plots.
 #'
