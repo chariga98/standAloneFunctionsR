@@ -1,4 +1,4 @@
-#' add xy area range
+#' Add xy area range
 #'
 #' A function that generates a string representing an XY area range to be added to a given path.
 #'
