@@ -1,4 +1,4 @@
-#' add t range
+#' add time range
 #'
 #' @description  This function generates a string representing a time range to be added to a given path.
 #'
