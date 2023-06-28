@@ -1,4 +1,4 @@
-#'#' summary sample
+#'Calculate summary sample
 #'
 #' A function that summarizes a sample from a vector.
 #'
