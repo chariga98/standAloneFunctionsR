@@ -1,4 +1,4 @@
-#' make_factor
+#' Make factor
 #'
 #' Creates a factor variable from the input data, with optional specification of ordering.
 #'
@@ -13,12 +13,12 @@
 #'
 #' @examples
 #' # Create a factor from a numeric vector
-#' make_factor(c(1, 2, 3, 2), ordered = TRUE)
+#' make_factor(c(1, 2,3,3,2,2,1,1,1, 3, 2), ordered = TRUE)
 #' # Output: 1 2 3 2
 #' # Levels: 1 < 2 < 3
 #'
 #' # Create a factor from a logical vector
-#' make_factor(c(TRUE, FALSE, TRUE), ordered = FALSE)
+#' make_factor(c(TRUE, FALSE,FALSE,TRUE,TRUE, TRUE), ordered = FALSE)
 #' # Output: TRUE FALSE TRUE
 #' # Levels: FALSE TRUE
 #'

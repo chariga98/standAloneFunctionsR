@@ -2,7 +2,7 @@
 % Please edit documentation in R/make_factor.R
 \name{make_factor}
 \alias{make_factor}
-\title{make_factor}
+\title{Make factor}
 \usage{
 make_factor(x, ordered = is.ordered(x))
 }
@@ -21,12 +21,12 @@ Creates a factor variable from the input data, with optional specification of or
 }
 \examples{
 # Create a factor from a numeric vector
-make_factor(c(1, 2, 3, 2), ordered = TRUE)
+make_factor(c(1, 2,3,3,2,2,1,1,1, 3, 2), ordered = TRUE)
 # Output: 1 2 3 2
 # Levels: 1 < 2 < 3
 
 # Create a factor from a logical vector
-make_factor(c(TRUE, FALSE, TRUE), ordered = FALSE)
+make_factor(c(TRUE, FALSE,FALSE,TRUE,TRUE, TRUE), ordered = FALSE)
 # Output: TRUE FALSE TRUE
 # Levels: FALSE TRUE
 
