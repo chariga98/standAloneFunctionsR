@@ -2,7 +2,7 @@
 % Please edit documentation in R/dd_to_dms.R
 \name{dd_to_dms}
 \alias{dd_to_dms}
-\title{dd_to_dms}
+\title{Convert decimal degrees to DMS format}
 \usage{
 dd_to_dms(x, lat)
 }
@@ -21,9 +21,9 @@ The degrees, minutes, and seconds are zero-padded to two digits each.
 Converts decimal degrees to degrees, minutes, and seconds (DMS) format.
 }
 \examples{
-dd_to_dms(37.7749, TRUE)
+dd_to_dms(37.7749, 'TRUE')
 # Output: "37 46 29 N"
 
-dd_to_dms(-122.4194, FALSE)
+dd_to_dms(-122.4194, 'FALSE')
 # Output: "122 25 10 W"
 }

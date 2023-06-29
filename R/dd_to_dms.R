@@ -1,5 +1,5 @@
 
-#' dd_to_dms
+#' Convert decimal degrees to DMS format
 #'
 #' @description  Converts decimal degrees to degrees, minutes, and seconds (DMS) format.
 #'
@@ -14,10 +14,10 @@
 #' @export
 #'
 #' @examples
-#' dd_to_dms(37.7749, TRUE)
+#' dd_to_dms(37.7749, 'TRUE')
 #' # Output: "37 46 29 N"
 #'
-#' dd_to_dms(-122.4194, FALSE)
+#' dd_to_dms(-122.4194, 'FALSE')
 #' # Output: "122 25 10 W"
 dd_to_dms <- function(x, lat) {
   if (lat) dir <- ifelse(x >= 0, "N", "S")
