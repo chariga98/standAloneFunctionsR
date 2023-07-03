@@ -10,6 +10,15 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
+    climdex.pcic,
+    data.table,
+    digest,
+    lubridate,
+    plyr,
+    rlang,
+    tidyr,
+    tidyselect,
+    zoo,
     getPass,
     sp,
     stringr,

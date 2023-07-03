@@ -5,9 +5,8 @@
 #' @param datafile A data file or data frame.
 #'
 #' @return A vector of unique years extracted from the data file.
-#' 
 #' @export
-#'  @examples
+#' @examples
 #'# # Sample data file
 #'# datafile <- data.frame(
 #'#   Name = c("John", "Alice", "Bob"),
