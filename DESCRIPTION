@@ -20,6 +20,7 @@ Imports:
     utils,
     jsonlite,
     magrittr,
-    sf
+    sf,
+    stats
 Remotes:
     pacificclimate/climdex.pcic
