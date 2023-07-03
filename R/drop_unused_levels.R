@@ -33,7 +33,7 @@
 #' 
 drop_unused_levels <- function(data, columns) {
   for(i in seq_along(columns)) {
-    if(is.factor(dat[[columns[i]]])) dat[[columns[i]]] <- droplevels(dat[[columns[i]]])
+    if(is.factor(data[[columns[i]]])) data[[columns[i]]] <- droplevels(data[[columns[i]]])
   }
   return(dat)
 }
