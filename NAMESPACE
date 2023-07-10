@@ -3,6 +3,7 @@
 export("%>%")
 export(add_nc)
 export(add_xy_point_range)
+export(climdex)
 export(cancor_coef)
 export(climatic_details)
 export(climdex_single_station)
