@@ -1,3 +1,14 @@
+
+#' drop unused levels
+#'
+#' @description  Drops unused levels from specified columns in a data frame.
+#'
+#' @param dat The input data frame.
+#' @param columns Character vector specifying the names of the columns in the data frame.
+#'
+#' @return The modified data frame with unused levels dropped from the specified columns.
+#' If a column is not a factor, it remains unchanged.
+
 #' Drop Unused Levels
 #' 
 #' @description
@@ -7,10 +18,41 @@
 #' @param columns A character vector specifying the column names in `dat` from which unused levels should be dropped.
 #'
 #' @return A modified version of the input data frame `data` with unused levels dropped from the specified columns.
+
 #' 
 #' @export
 #'
 #' @examples
+
+#' # Create a data frame
+#' df <- data.frame(A = factor(c("apple", "banana", "apple", "orange")),
+#'                  B = factor(c("red", "blue", "green", "red")),
+#'                  C = c(1, 2, 3, 4))
+#'
+#' # Drop unused levels from column 'A'
+#' drop_unused_levels(df, columns = "A")
+#' # Output:
+#' #       A    B C
+#' # 1 apple  red 1
+#' # 2 banana blue 2
+#' # 3 apple green 3
+#' # 4 orange  red 4
+#'
+#' # Drop unused levels from multiple columns
+#' drop_unused_levels(df, columns = c("A", "B"))
+#' # Output:
+#' #       A    B C
+#' # 1 apple  red 1
+#' # 2 banana blue 2
+#' # 3 apple green 3
+#' # 4 orange  red 4
+drop_unused_levels <- function(dat, columns) {
+  for (i in seq_along(columns)) {
+    if (is.factor(dat[[columns[i]]])) dat[[columns[i]]] <- droplevels(dat[[columns[i]]])
+  }
+  return(dat)
+}
+
 #' # Create a data frame with a factor column
 #' df <- data.frame(
 #'   x = factor(c("A", "B", "C", "D")),
@@ -37,3 +79,4 @@ drop_unused_levels <- function(data, columns) {
   }
   return(dat)
 }
+
