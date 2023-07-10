@@ -2,7 +2,7 @@
 % Please edit documentation in R/climdex.R
 \name{climdex}
 \alias{climdex}
-\title{climdex}
+\title{Calculate climate indices}
 \usage{
 climdex(
   data,
@@ -78,8 +78,8 @@ A data frame containing the calculated climate indices.
 This function calculates climate indices based on temperature and precipitation data.
 }
 \examples{
-data <- read.csv("climate_data.csv")
-indices <- c("fd", "su", "id", "tr", "wsdi", "csdi", "gsl", "sdii", "r10mm", "r20mm", "rnnmm", "cdd", "cwd", "r95ptot", "r99ptot", "prcptot")
-climdex(data, station = "station_name", date = "date", year = "year", month = "month", prec = "precipitation",
-         tmax = "max_temperature", tmin = "min_temperature", indices = indices)
+# data <- read.csv("climate_data.csv")
+# indices <- c("fd", "su", "id", "tr", "wsdi", "csdi", "gsl", "sdii", "r10mm", "r20mm", "rnnmm", "cdd", "cwd", "r95ptot", "r99ptot", "prcptot")
+# climdex(data, station = "station_name", date = "date", year = "year", month = "month", prec = "precipitation",
+#          tmax = "max_temperature", tmin = "min_temperature", indices = indices)
 }

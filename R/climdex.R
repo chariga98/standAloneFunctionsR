@@ -1,4 +1,4 @@
-#' climdex
+#' Calculate climate indices
 #'
 #' @description
 #'  This function calculates climate indices based on temperature and precipitation data.  
@@ -30,10 +30,10 @@
 #' @export
 #'
 #' @examples
-#' data <- read.csv("climate_data.csv")
-#' indices <- c("fd", "su", "id", "tr", "wsdi", "csdi", "gsl", "sdii", "r10mm", "r20mm", "rnnmm", "cdd", "cwd", "r95ptot", "r99ptot", "prcptot")
-#' climdex(data, station = "station_name", date = "date", year = "year", month = "month", prec = "precipitation",
-#'          tmax = "max_temperature", tmin = "min_temperature", indices = indices)
+#' # data <- read.csv("climate_data.csv")
+#' # indices <- c("fd", "su", "id", "tr", "wsdi", "csdi", "gsl", "sdii", "r10mm", "r20mm", "rnnmm", "cdd", "cwd", "r95ptot", "r99ptot", "prcptot")
+#' # climdex(data, station = "station_name", date = "date", year = "year", month = "month", prec = "precipitation",
+#' #          tmax = "max_temperature", tmin = "min_temperature", indices = indices)
 
 climdex <- function(data, station, date, year, month, prec, tmax, tmin, indices, freq = "annual",
                     base.range = c(1961, 1990), n = 5, northern.hemisphere = TRUE,
