@@ -2,7 +2,7 @@
 % Please edit documentation in R/climatic_missing.R
 \name{climatic_missing}
 \alias{climatic_missing}
-\title{climatic_missing}
+\title{Summarise missing climatic values}
 \usage{
 climatic_missing(
   data,
@@ -34,16 +34,16 @@ This function calculates the summary of missing data in climatic variables for d
 }
 \examples{
 # Example 1: Calculate missing data summary for all elements and stations
-summary_data <- climatic_missing(data = climatic_data, date = "Date")
+#summary_data <- climatic_missing(data = climatic_data, date = "Date")
 
 # Example 2: Calculate missing data summary for specific elements and stations
-summary_data <- climatic_missing(data = climatic_data, date = "Date", elements = c("Temperature", "Precipitation"), stations = c("Station1", "Station2"))
+#summary_data <- climatic_missing(data = climatic_data, date = "Date", elements = c("Temperature", "Precipitation"), stations = c("Station1", "Station2"))
 
 # Example 3: Calculate missing data summary with custom start and end dates
-summary_data <- climatic_missing(data = climatic_data, date = "Date", start = FALSE, end = TRUE)
+#summary_data <- climatic_missing(data = climatic_data, date = "Date", start = FALSE, end = TRUE)
 
 # Example 4: Calculate missing data summary without including station information
-summary_data <- climatic_missing(data = climatic_data, date = "Date", stations = NULL)
+#summary_data <- climatic_missing(data = climatic_data, date = "Date", stations = NULL)
 
 
 }
