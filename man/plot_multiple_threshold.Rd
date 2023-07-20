@@ -44,6 +44,14 @@ plot_multiple_threshold(
 
 \item{...}{Additional parameters to be passed to the threshold_Plot function.}
 }
+\value{
+TODO
+}
 \description{
 This function produces multiple threshold plots for various stations at a time.
+}
+\examples{
+# TODO
+
+
 }

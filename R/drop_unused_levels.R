@@ -1,14 +1,3 @@
-
-#' drop unused levels
-#'
-#' @description  Drops unused levels from specified columns in a data frame.
-#'
-#' @param dat The input data frame.
-#' @param columns Character vector specifying the names of the columns in the data frame.
-#'
-#' @return The modified data frame with unused levels dropped from the specified columns.
-#' If a column is not a factor, it remains unchanged.
-
 #' Drop Unused Levels
 #' 
 #' @description
@@ -52,31 +41,3 @@ drop_unused_levels <- function(dat, columns) {
   }
   return(dat)
 }
-
-#' # Create a data frame with a factor column
-#' df <- data.frame(
-#'   x = factor(c("A", "B", "C", "D")),
-#'   y = c(1, 2, 3, 4)
-#' )
-#' 
-#' # Drop unused levels from the 'x' column
-#' df_modified <- drop_unused_levels(df, "x")
-#' levels(df_modified$x)
-#' # Output: "A" "B" "C" "D"
-#' 
-#' # Drop unused levels from multiple columns
-#' df_modified <- drop_unused_levels(df, c("x", "y"))
-#' levels(df_modified$x)
-#' # Output: "A" "B" "C" "D"
-#' 
-#' levels(df_modified$y)
-#' # Output: 1 2 3 4 
-#' 
-#' 
-drop_unused_levels <- function(data, columns) {
-  for(i in seq_along(columns)) {
-    if(is.factor(data[[columns[i]]])) data[[columns[i]]] <- droplevels(data[[columns[i]]])
-  }
-  return(dat)
-}
-
