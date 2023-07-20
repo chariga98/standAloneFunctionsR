@@ -16,11 +16,11 @@
 #' @param verbose Boolean value indicating whether to display verbose output.
 #' @param ... Additional parameters to be passed to the threshold_Plot function.
 #'
-#' @return
+#' @return Returns a threshold plot
 #' 
 #' @export
 #'
-#' @examples
+#' @examples # TODO
 #' 
 #' 
 plot_multiple_threshold <- function(data, station_col_name, element_col_name, r, type = c("GP", "PP", "Exponential"), nint = 10,

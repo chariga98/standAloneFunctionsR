@@ -2,15 +2,14 @@
 % Please edit documentation in R/drop_unused_levels.R
 \name{drop_unused_levels}
 \alias{drop_unused_levels}
-
-\title{drop unused levels}
+\title{Drop unused levels}
 \usage{
 drop_unused_levels(dat, columns)
 }
 \arguments{
-\item{dat}{The input data frame.}
+\item{columns}{A character vector specifying the column names in \code{dat} from which unused levels should be dropped.}
 
-\item{columns}{Character vector specifying the names of the columns in the data frame.}
+\item{data}{A data frame.}
 }
 \value{
 The modified data frame with unused levels dropped from the specified columns.
@@ -42,41 +41,4 @@ drop_unused_levels(df, columns = c("A", "B"))
 # 2 banana blue 2
 # 3 apple green 3
 # 4 orange  red 4
-
-\title{Drop Unused Levels}
-\usage{
-drop_unused_levels(data, columns)
-}
-\arguments{
-\item{data}{A data frame.}
-
-\item{columns}{A character vector specifying the column names in \code{dat} from which unused levels should be dropped.}
-}
-\value{
-A modified version of the input data frame \code{data} with unused levels dropped from the specified columns.
-}
-\description{
-This function drops unused levels from specified columns in a data frame.
-}
-\examples{
-# Create a data frame with a factor column
-df <- data.frame(
-  x = factor(c("A", "B", "C", "D")),
-  y = c(1, 2, 3, 4)
-)
-
-# Drop unused levels from the 'x' column
-df_modified <- drop_unused_levels(df, "x")
-levels(df_modified$x)
-# Output: "A" "B" "C" "D"
-
-# Drop unused levels from multiple columns
-df_modified <- drop_unused_levels(df, c("x", "y"))
-levels(df_modified$x)
-# Output: "A" "B" "C" "D"
-
-levels(df_modified$y)
-# Output: 1 2 3 4 
-
-
 }
