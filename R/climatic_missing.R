@@ -77,7 +77,7 @@ climatic_missing <- function(data, date, elements = ..., stations,
     dplyr::summarise(From = dplyr::first(start),
                      To = dplyr::last(end),
                      Missing = sum(is.na(value)),
-                     `%` = round(sum(is.na(value))/n()*100, 1))
+                     `%` = round(sum(is.na(value))/dplyr::n()*100, 1))
   
   # complete years
   complete.years <- data.stack %>%

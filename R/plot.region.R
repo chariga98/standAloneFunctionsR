@@ -196,6 +196,7 @@ plot.region <- function(lon, lat, product, time, time_point = as.Date("2002-01-0
   
   if (plotHighRes){  
     
+    # TODO: For sets of data, set up a package to use lazy-loading of data.
     data("worldMapEnv", package = "maps")
     data("worldHiresMapEnv", package = "mapdata")
     data("countriesHigh", package = "rworldxtra")

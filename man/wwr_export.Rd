@@ -74,6 +74,13 @@ wwr_export(
 
 \item{folder}{The folder where the output files will be saved.}
 }
+\value{
+TODO
+}
 \description{
 The function is meant to reshape data into formats required by WMO for submission of climatic data.This gives Yearly data records with monthly and annual data for a particular year:
+}
+\examples{
+# TODO
+
 }

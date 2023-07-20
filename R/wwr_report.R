@@ -27,10 +27,10 @@
 #' @param wigos_identifier The name of the column in 'station_data' representing the WIGOS station identifier.
 #' @param folder The folder where the output files will be saved.
 #'
-#' @return
+#' @return TODO
 #' @export
 #'
-#' @examples
+#' @examples # TODO
 #' 
 wwr_export <- function(data, year, month, mean_station_pressure, mean_sea_level_pressure, 
                        mean_temp, total_precip, mean_max_temp, mean_min_temp, mean_rel_hum, link, link_by,

@@ -69,7 +69,7 @@ climatic_details <- function(data, date, elements = ..., stations,
       dplyr::summarise(From = dplyr::first({{ date }}),
                        To = dplyr::last({{ date }}),
                        Count = dplyr::n()) %>%
-      mutate(Level = "Day")
+      dplyr::mutate(Level = "Day")
     
     if (order){
       detail.table.day <- detail.table.day %>% dplyr::arrange(From)
@@ -89,7 +89,7 @@ climatic_details <- function(data, date, elements = ..., stations,
       dplyr::group_by(Date.ym, {{ stations }}, Element)
     
     detail.table.month <- detail.table.month %>%
-      dplyr::summarise(no = n(),
+      dplyr::summarise(no = dplyr::n(),
                        na = sum(is.na(Value)),
                        From = dplyr::first({{ date }}),
                        To = dplyr::last({{ date }})) %>%
@@ -102,8 +102,8 @@ climatic_details <- function(data, date, elements = ..., stations,
       dplyr::group_by(element.na, {{ stations }}, Element) %>%
       dplyr::summarise(From = dplyr::first(From),
                        To = dplyr::last(To),
-                       Count = n()) %>%
-      mutate(Level = "Month")
+                       Count = dplyr::n()) %>%
+      dplyr::mutate(Level = "Month")
     
     if (order){
       detail.table.month <- detail.table.month %>% dplyr::arrange(From)
@@ -122,7 +122,7 @@ climatic_details <- function(data, date, elements = ..., stations,
       dplyr::group_by(Date.y, {{ stations }}, Element)
     
     detail.table.year <- detail.table.year %>%
-      dplyr::summarise(no = n(),
+      dplyr::summarise(no = dplyr::n(),
                        na = sum(is.na(Value)),
                        From = dplyr::first({{ date }}),
                        To = dplyr::last({{ date }})) %>%
@@ -135,8 +135,8 @@ climatic_details <- function(data, date, elements = ..., stations,
       dplyr::group_by(element.na, {{ stations }}, Element) %>%
       dplyr::summarise(From = dplyr::first(From),
                        To = dplyr::last(To),
-                       Count = n()) %>%
-      mutate(Level = "Year")
+                       Count = dplyr::n()) %>%
+      dplyr::mutate(Level = "Year")
     
     if (order){
       detail.table.year <- detail.table.year %>% dplyr::arrange(From)
