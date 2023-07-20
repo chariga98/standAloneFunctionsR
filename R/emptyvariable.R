@@ -14,7 +14,6 @@
 #'
 #' is.emptyvariable(c("", ""))
 #' # [1] TRUE
-#' install.packages("quos")
 
 is.emptyvariable <- function(x){
   return(isTRUE(length(x) == sum(x == "")))
