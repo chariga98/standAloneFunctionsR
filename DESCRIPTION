@@ -22,7 +22,6 @@ Imports:
     zoo,
     getPass,
     sp,
-    quos,
     stringr,
     raster,
     dplyr,
